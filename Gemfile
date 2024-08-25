@@ -67,3 +67,5 @@ end
 gem "devise", "~> 4.9"
 
 gem "simple_form", "~> 5.3"
+
+gem "view_component", "~> 3.13"
