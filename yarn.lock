@@ -176,6 +176,18 @@
   resolved "https://registry.yarnpkg.com/@sindresorhus/merge-streams/-/merge-streams-2.3.0.tgz#719df7fb41766bc143369eaa0dd56d8dc87c9958"
   integrity sha512-LtoMMhxAlorcGhmFYI+LhPgbPZCkgP6ra1YL604EeF6U98pLlQ3iWIGMdWSC+vWmPBWBNgmDBAhnAobLROJmwg==
 
+"@tabler/icons-webfont@^3.10.0":
+  version "3.14.0"
+  resolved "https://registry.yarnpkg.com/@tabler/icons-webfont/-/icons-webfont-3.14.0.tgz#04cc1766fa318f35453f7e1ff63a0271d5d15493"
+  integrity sha512-ubYko0VvbzFHvo5Miq5igBPdnzdyrNxA1GwfAfOM7L/Xh8LOgH2hFFSRc0ED3zBz6r1xkDFhA++n1MtN/hWeOg==
+  dependencies:
+    "@tabler/icons" "3.14.0"
+
+"@tabler/icons@3.14.0":
+  version "3.14.0"
+  resolved "https://registry.yarnpkg.com/@tabler/icons/-/icons-3.14.0.tgz#49b9d9ee33dbf19e2c8cd774f794894c23ffafc3"
+  integrity sha512-OakKjK1kuDWKoNwdnHHVMt11kTZAC10iZpN/8o/CSYdeBH7S3v5n8IyqAYynFxLI8yBGTyBvljtvWdmWh57zSg==
+
 ansi-regex@^5.0.1:
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/ansi-regex/-/ansi-regex-5.0.1.tgz#082cb2c89c9fe8659a311a53bd6a4dc5301db304"

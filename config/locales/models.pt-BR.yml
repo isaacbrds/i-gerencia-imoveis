@@ -1,0 +1,31 @@
+pt-BR:
+  models:
+    models: &model_names
+      property_situation: Situação do Imóvel
+      property_standard_item: Característica do Imóvel
+      property_type: Tipo de Imóvel
+      user: Usuário
+    attributes: &model_attributes
+      property_type:
+        name: Nome
+      property_situation:
+        name: Nome
+      property_standard_item:
+        name: Nome
+      user:
+        name: Nome
+        email: E-mail
+        password: Senha
+        password_confirmation: Confirme sua Senha
+
+  activerecord:
+    models:
+      <<: *model_names
+    attributes:
+      <<: *model_attributes
+
+  activemodel:
+    models:
+      <<: *model_names
+    attributes:
+      <<: *model_attributes

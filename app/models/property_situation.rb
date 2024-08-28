@@ -1,0 +1,2 @@
+class PropertySituation < ApplicationRecord
+end

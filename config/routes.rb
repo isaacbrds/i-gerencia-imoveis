@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   devise_for :users
   resource :dashboard, only: :show
   namespace :admin do
+    resources :property_situations, except: [:show]
+    resources :property_standard_items, except: [:show]
     resources :property_types, except: [:show]
   end
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html

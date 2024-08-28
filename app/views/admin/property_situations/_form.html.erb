@@ -1,4 +1,4 @@
-<%= simple_form_for [:admin, @property_type] do |form| %>
+<%= simple_form_for [:admin, @property_situation] do |form| %>
   <%= render(CardComponent.new(title: resource_form_title)) do |component| %>
     <%= form.input :name, input_html: { class: 'form-control mt-2 mb-2' } %>
 
