@@ -1,6 +1,14 @@
 pt-BR:
   resources:
     admin:
+      properties:
+        collection: Imóveis
+        title: Título do Imóvel
+        size: Tamanho do Imóvel
+        bedroom_count: Número de Quartos
+        bathroom_count: Número de Banheiros
+        new: Novo Imóvel
+        edit: Editar Imóvel
       property_situations:
         collection: Situações do Imóvel
         new: Nova Situação

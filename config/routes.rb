@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   devise_for :users
   resource :dashboard, only: :show
   namespace :admin do
+    resources :properties
     resources :property_situations, except: [:show]
     resources :property_standard_items, except: [:show]
     resources :property_types, except: [:show]
