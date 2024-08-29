@@ -1,5 +1,6 @@
 <%= simple_form_for [:admin, @property] do |form| %>
   <%= render(CardComponent.new(title: resource_form_title)) do |component| %>
+    <%= form.input :contract_type, collection: { Aluguel: 'rent', Venda: 'sell' }, include_blank: false %>
     <div class="row">
       <div class="col-12 col-md-4">
         <%= form.input :address_zip_code, input_html: { class: 'form-control mt-2 mb-3' } %>
@@ -36,6 +37,15 @@
         <%= form.input :size, input_html: { class: 'form-control mt-2 mb-3' } %>
       </div>
       
+       <div class="col-12 col-md-6 col-lg-3">
+        <%= form.input :price, input_html: { class: 'form-control mt-2 mb-3' } %>
+      </div>
+       <div class="col-12 col-md-6 col-lg-3">
+        <%= form.input :tax, input_html: { class: 'form-control mt-2 mb-3' } %>
+      </div>
+       <div class="col-12 col-md-6 col-lg-3">
+        <%= form.input :condominium_fee, input_html: { class: 'form-control mt-2 mb-3' } %>
+      </div>
     </div>
 
     <%= form.input :bedroom_count, input_html: { class: 'form-control mt-2 mb-3' } %>

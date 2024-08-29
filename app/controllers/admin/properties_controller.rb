@@ -1,5 +1,12 @@
 module Admin
   class PropertiesController < BaseController
+    PERMITED_PARAMS = [
+      :contract_type, :address_zip_code, :address_state, :address_city,
+      :address_neighborhood, :address_line_1, :address_number, :address_line_2,
+      :title, :size, :price, :tax, :condominium_fee, :bedroom_count,
+      :bathroom_count
+    ].freeze
+
     before_action :load_property, only: [:edit, :update, :destroy]
 
     def index
@@ -41,7 +48,7 @@ module Admin
     end
 
     def property_params
-      params.require(:property).permit(:title, :size, :bedroom_count, :bathroom_count)
+      params.require(:property).permit(*PERMITED_PARAMS)
     end
   end
 end
