@@ -1,27 +1,4 @@
-<div class="card">
-  <div class="card-header">
-    <h3 class="card-title">Lista</h3>
-    <div class="card-actions">
-      <%= link_to new_admin_property_path, class: "btn btn-primary" do %>
-        <i class="ti ti-plus"></i>
-        Adicionar Novo
-      <% end %>
-    </div>
-  </div>
-  <div class="table-responsive">
-    <table class="table table-vcenter table-mobile-md card-table">
-      <thead>
-        <tr>
-          <th><%= t "Name" %></th>
-          <th><%= t "Size" %></th>
-          <th><%= t "Bedroom" %></th>
-          <th><%= t "Bathroom" %></th>
-          <th class="w-1"></th>
-        </tr>
-      </thead>
-      <tbody>
-        <%= render @properties %>
-      </tbody>
-    </table>
-  </div>
+
+<div class="d-flex flex-column gap-4">
+  <%= render Admin::PropertyCardComponent.with_collection @properties%>
 </div>

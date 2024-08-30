@@ -270,7 +270,7 @@ DEPENDENCIES
   bootsnap
   cssbundling-rails
   debug
-  devise (~> 4.9)
+  devise
   image_processing (~> 1.2)
   jbuilder
   jsbundling-rails

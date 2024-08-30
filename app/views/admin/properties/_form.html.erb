@@ -50,6 +50,8 @@
 
     <%= form.input :bedroom_count, input_html: { class: 'form-control mt-2 mb-3' } %>
     <%= form.input :bathroom_count, input_html: { class: 'form-control mt-2 mb-3' } %>
+
+    <%= form.input :photos, input_html: { multiple: true }%>
     <% component.with_footer do %>
       <%= form.button :button %>
     <% end %>
